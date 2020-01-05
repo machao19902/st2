@@ -351,6 +351,14 @@ CRON_PARAMETERS_SCHEMA = {
             ],
             "minimum": 0,
             "maximum": 59
+        },
+        "start_date": {
+            "type": "string",
+            "format": "date-time",
+        },
+        "end_date": {
+            "type": "string",
+            "format": "date-time",
         }
     },
     "additionalProperties": False
@@ -420,3 +428,4 @@ TRIGGER_INSTANCE_STATUSES = [
     TRIGGER_INSTANCE_PROCESSED,
     TRIGGER_INSTANCE_PROCESSING_FAILED
 ]
+
